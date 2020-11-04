@@ -13,10 +13,10 @@ public class SuperHeroesTest {
         ArrayList<String> features = new ArrayList<String>();
         features.add("healer");
         features.add("care giver");
-        model.put("id", 1);
         model.put("group", "science");
         model.put("features",features);
         SuperHeroes superHeroes = new SuperHeroes(model);
+        System.out.println(superHeroes.getModel());
         assertEquals(true, superHeroes instanceof SuperHeroes);
     }
 }
