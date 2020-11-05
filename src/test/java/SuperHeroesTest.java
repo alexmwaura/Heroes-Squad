@@ -16,7 +16,6 @@ public class SuperHeroesTest {
         model.put("group", "science");
         model.put("features",features);
         SuperHeroes superHeroes = new SuperHeroes(model);
-        System.out.println(superHeroes.getModel());
         assertEquals(true, superHeroes instanceof SuperHeroes);
     }
 }
